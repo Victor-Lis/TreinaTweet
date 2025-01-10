@@ -2,7 +2,7 @@ import { useIndex } from "../hooks/useIndex";
 
 import TextInput from "../components/TextInput";
 import Tweet from "../components/Tweet";
-import styles from "./index.module.css"; // Certifique-se de importar os estilos
+import styles from "./Index.module.css"; // Certifique-se de importar os estilos
 
 export default function Index() {
   const { text, tweetList, maxLength, onTextChange, sendTweet } = useIndex()
