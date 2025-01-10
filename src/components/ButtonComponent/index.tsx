@@ -5,7 +5,7 @@ type ButtonComponentProps = {onSubmit: () => void; value: string; maxLength: num
 export default function ButtonComponent({onSubmit, value, maxLength}: ButtonComponentProps) {
   return (
     <div>      
-      <button type="button" onClick={onSubmit}>Tweetar!</button>
+      <button type="button" onClick={onSubmit} disabled={!value.length}>Tweetar!</button>
       <div>
         {value.length} / {maxLength}
       </div>
